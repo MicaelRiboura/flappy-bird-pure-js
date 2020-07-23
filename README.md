@@ -2,7 +2,7 @@
 
 ## Acesso
 
-Acesse o jogo [aqui.](https://micaelriboura.github.io/flappy-bird-pure-js/)
+### Acesse o jogo [aqui.](https://micaelriboura.github.io/flappy-bird-pure-js/)
 
 ## Instruções
 
