@@ -6,4 +6,5 @@
 
 ## Instruções
 
+Para pular, pressione a tecla de espaço
 Faça reload na página quando acontecer Game Over.
