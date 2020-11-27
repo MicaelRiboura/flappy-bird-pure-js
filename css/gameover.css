@@ -1,0 +1,28 @@
+@font-face{
+    font-family:'Pixel';
+    src:url('../fonts/Pixel.ttf');
+}
+
+.gameover{
+    display: none;
+}
+
+.btns{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 20%;
+    left: 40.5%;
+    font-size: 40px; 
+}
+
+.btns h1{
+    text-align: center;
+    font-family: Pixel;
+    font-size: 70px;
+}
+
+#jogar-novamente{
+    cursor: pointer;
+}
+

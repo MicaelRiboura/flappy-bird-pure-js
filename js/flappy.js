@@ -156,10 +156,42 @@ function FlappyBird() {
 
             if (colidiu(passaro, barreiras)) {
                 clearInterval(temporizador)
+                new MenuGameOver(pontos)
             }
         }, 20)
     }
 }
+
+function MenuGameOver(pontos){
+    this.CriarMenu = () => {
+        return (
+            this.menu = document.querySelector(".gameover"),
+            this.menu.style.display = 'flex'
+        )
+    }
+    this.AdicionarPontos = (pontos) => {
+        return (
+            this.spontos = document.querySelector("#points"),
+            this.spontos.innerHTML = `${pontos}`
+        )
+    }
+
+    this.ApagarPontos = () => {
+        return (
+            this.progresso = document.querySelector(".progresso"),
+            this.progresso.style.display = 'none'
+        )
+    }
+    const jogarnovamente = document.querySelector('#jogar-novamente')
+    jogarnovamente.addEventListener('click', () => {
+        window.location.reload()
+    })
+    this.CriarMenu()
+    this.AdicionarPontos(pontos)
+    this.ApagarPontos()
+}
+
+
 new FlappyBird().start()
 
 
